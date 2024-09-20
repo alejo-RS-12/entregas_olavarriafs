@@ -1,8 +1,0 @@
-Ejercicio obligatorio para entregar el 5/7:
-Realicen una página:
-•Elementos anidados.
-•Utilizar selectores anidados para dar estilos.
-•Probar colisiones y ver qué estilo se impone. (Esto les dije que es mas para ellos no tienen que mostrar nada en particular en el ejercicio)
-Diseñe un link que debe:
-•Cambiar levemente su color al pasar por arriba con el cursor
-•Cambiar de color al ser visitado.
