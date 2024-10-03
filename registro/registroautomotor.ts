@@ -1,5 +1,7 @@
 // src/RegistroAutomotor.ts
 import { Vehiculo } from './vehiculo';
+import { Moto } from './moto';  // Asegúrate de importar estas clases
+import { Camion } from './camion'; 
 
 export class RegistroAutomotor {
   private vehiculos: Vehiculo[] = [];
@@ -24,12 +26,22 @@ export class RegistroAutomotor {
     }
   }
 
-  darDeBaja(indice: number): void {
-    if (this.vehiculos[indice]) {
-      this.vehiculos.splice(indice, 1);
-      console.log("Vehículo dado de baja correctamente");
+  darDeBaja(index: number): void {
+    const vehiculo = this.vehiculos[index];
+    
+    if (!vehiculo) {
+      console.log('Índice inválido. No existe un vehículo en la posición proporcionada.');
+      return;
+    }
+
+    if (vehiculo instanceof Moto) {
+        this.vehiculos.splice(index, 1);
+        console.log('Una moto ha sido dada de baja.');
+    } else if (vehiculo instanceof Camion) {
+        this.vehiculos.splice(index, 1);
+        console.log('Un camión ha sido dado de baja.');
     } else {
-      console.log("Vehículo no encontrado");
+        console.log('Solo motos y camiones pueden ser dados de baja.');
     }
   }
 
