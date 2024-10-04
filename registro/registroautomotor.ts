@@ -34,8 +34,8 @@ export class RegistroAutomotor {
       return;
     }
 
-    if (vehiculo instanceof Moto) {
-        this.vehiculos.splice(index, 1);
+    if (vehiculo instanceof Moto) {//verifica si un objeto es una instancia de una clase específica o de su cadena de prototipos
+        this.vehiculos.splice(index, 1);// splice permite modificar, eliminar, reemplazar o agregar elementros del array
         console.log('Una moto ha sido dada de baja.');
     } else if (vehiculo instanceof Camion) {
         this.vehiculos.splice(index, 1);
