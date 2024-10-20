@@ -1,0 +1,7 @@
+crear un sistema de personajes de un videojuego rpg utilizando herendia y polimorfismo
+los personajes tendran carecteristicas (nombre, raza, armas, habilidades unicas) y algunos podran evolucionar en versiones mejoradas
+atributos obligarotrios: nombre()string, nivel(number), ph(number)
+metodos ejemplo: atacar(imprime un mensaje indicando que el personaje esta atacando), defender(imprime un mensaje indicando que el personaje esta defendiendo)
+se pueden crear las propiedades que quieran, se recomienda crear 3 tipo de heroes (mago, luchador, arquero) y luego algunos especiales
+
+puntos extra, el personaje se puede encontrar una caja magica en algun momento y al abrirla el personaje aprende un nuevo ataque,
